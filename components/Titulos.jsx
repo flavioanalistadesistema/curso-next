@@ -1,8 +1,17 @@
-export default function Titulos() {
-    return (
+export default function Titulos(props) {
+    console.log(props);
+
+    return props.extra ? (
         <>
-            <h1>TItulo</h1>
-            <h2>Subtitutlo</h2>
+            <p>{props.primario}</p>
+            <p>{props.secundario}</p>
+        </>
+    ) : (
+        <>
+            <h1>{props.primario}</h1>
+            <h2>{props.secundario}</h2>
         </>
     )
 }
+
+// recebendo props via parametro (obj)
