@@ -6,3 +6,4 @@ export default [
     new Product(3, "Notebook", 3500),
     new Product(4, "Playstasion", 1900)
 ]
+
