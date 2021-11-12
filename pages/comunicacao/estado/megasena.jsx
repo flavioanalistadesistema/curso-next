@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { mega } from "../../../../function/mega"
+import { mega } from "../../../function/mega"
 import ContadorDisplay from "../../../components/ContadorDisplay"
 
 export default function megasena() {
