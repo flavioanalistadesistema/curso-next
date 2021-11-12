@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { mega } from "../../../../function/mega"
 import ContadorDisplay from "../../../components/ContadorDisplay"
 
 export default function megasena() {
     const [qtd, setQtd] = useState(6)
-    const [numeros, setNumeros] = useState(mega(qtd))
+    const [numeros, setNumeros] = useState([])
+
+    useEffect(() => {
+        setNumeros(mega(qtd))
+    }, [])
 
     function render() {
         return numeros.map(
