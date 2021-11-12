@@ -26,8 +26,10 @@ export default function megasena() {
             }}>
                 {render()}
             </div>
-            <input type="number" min="6" max="60" value={qtd} onChange={ev => setQtd(ev.target.value)} />
-            <button onClick={() => setNumeros(mega(qtd))}>Sorteio</button>
+            <div>
+                <input type="number" min="6" max="60" value={qtd} onChange={ev => setQtd(ev.target.value)} />
+                <button onClick={() => setNumeros(mega(qtd))}>Sorteio</button>
+            </div>
         </div>
     )
 }
